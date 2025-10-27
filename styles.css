@@ -54,3 +54,8 @@ h2 {
   text-align: center;
   margin: 15px;
 }
+
+a { /* change the appearance of ALL links */
+	text-decoration: none;
+	color: rgb(0, 48, 73);
+	}
