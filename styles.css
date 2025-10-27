@@ -1,11 +1,11 @@
 body {
   background: rgb(60, 9, 108);
+  color: white;
 }
 
 h1 {
   color: rgb(157, 78, 221);
   text-align: center;
-
 }
 
 h2 {
@@ -28,7 +28,7 @@ h2 {
   width: 30%;
   margin: 10px;
   padding: 20px 10px;
-  background: rgb(240, 24, 24);
+  background: rgb(186, 24, 240);
   /* rounded corners for the blobs */
   border-radius: 25%;
 }
