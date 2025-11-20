@@ -1,0 +1,117 @@
+:root {
+  --max-width: 850px;
+  --gutter: 14px;
+  --left-col-width: 28%;
+  --font-sans: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Blue theme */
+  --primary-blue: rgb(0, 48, 73);
+  --page-blue: rgb(102, 155, 188);
+  --light-bg: #354c64;
+}
+
+/* Page / base */
+body {
+  font-family: var(--font-sans), Arial, sans-serif;
+
+  color: #222;
+  /* use the blue background you provided */
+  background-color: var(--page-blue);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Basic table layout */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td {
+  vertical-align: top;
+  padding: 8px;
+}
+
+/* Headings */
+h1,
+h2 {
+  color: var(--primary-blue);
+}
+
+/* Horizontal rule */
+hr {
+  border: 0;
+  border-top: 2px solid rgb(253, 240, 213);
+  margin: 10px 0 20px 0;
+}
+
+/* Resume container */
+
+/* Header */
+.resume-header {
+  text-align: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #053991;
+}
+
+/* Two-column table layout */
+.resume-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.resume-table td {
+  vertical-align: top; /* keep left labels aligned with top of content */
+  padding: 12px var(--gutter);
+}
+
+/* Left column (section titles) */
+.col-left {
+  width: var(--left-col-width);
+  padding-right: 18px;
+}
+.col-left h2 {
+  margin: 0;
+  font-size: 15px;
+  color: var(--primary-blue);
+}
+
+/* Right column */
+.col-right {
+  width: calc(100% - var(--left-col-width));
+}
+
+/* Entry layout */
+.entry {
+  position: relative;
+  padding-right: 8px; /* room for the floated date */
+}
+.entry .date {
+  float: right;
+  color: #000000;
+  font-size: 0.92rem;
+  margin-left: 8px;
+}
+.entry .subtitle {
+  margin-top: 6px;
+  color: #444;
+  font-size: 0.96rem;
+}
+
+/* clear floats inside entry */
+
+/* Lists */
+ul {
+  margin: 8px 0 0 1.15em;
+  padding: 0;
+}
+li {
+  margin-bottom: 8px;
+  line-height: 1.35;
+}
+
+/* Skills list style */
+.skills-list li {
+  margin-bottom: 6px;
+}
+.skills-list strong {
+  color: var(--primary-blue);
+}
